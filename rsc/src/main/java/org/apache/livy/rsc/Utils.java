@@ -84,7 +84,7 @@ public class Utils {
         sb.append(s).append(sep);
       }
     }
-    if (sb.length() > 0) {
+    if ((sb.length() - sep.length()) > 0) {
       sb.setLength(sb.length() - sep.length());
     }
     return sb.toString();
